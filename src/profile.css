@@ -1,0 +1,20 @@
+
+.profile-picture {
+    width: 30%;
+}
+
+.profile{
+    display: flex;
+    flex-direction: row;
+    margin: 2rem;
+}
+
+.additional-info{
+    margin-left: 1.5rem;
+    color: white;
+    font-family:"Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.name{
+    font-size: 2rem;
+}
