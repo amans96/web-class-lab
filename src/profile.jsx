@@ -1,14 +1,28 @@
 
-import './profile.css'
+import "./profile.css";
 
-export default function Profile({name, email, profile_picture}){
+export default function Profile({ name, email, profile_picture }) {
     return (
-        <div className="profile">
-            <img className={"profile-picture"} src={profile_picture} alt={name}/>
-            <div className={"additional-info"}>
-                <p className={"name"}>{name}</p>
-                <p className={"email"}>{email}</p>
+        <article className="profile-card">
+
+            <div className="image-wrapper">
+                <img
+                    src={profile_picture}
+                    alt={`${name} profile`}
+                    className="profile-picture"
+                />
             </div>
-        </div>
-    )
+
+            <div className="profile-details">
+                <h2>{name}</h2>
+                <span>{email}</span>
+
+                <button className="connect-btn">
+                    View Profile
+                </button>
+            </div>
+
+        </article>
+    );
 }
+

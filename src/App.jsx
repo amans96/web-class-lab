@@ -1,13 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 import "bootstrap-icons/font/bootstrap-icons.css";
-import UserProfile from "./UserProfile.jsx";
-import Profile from "./profile.jsx";
 import Social from "./social.jsx";
+
 export default function App() {
-    return(
+    return (
         <div>
-            <Profile/>
-            <Social/>
+            <Social />
         </div>
     );
 }

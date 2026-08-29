@@ -1,20 +1,55 @@
 
-.profile-picture {
-    width: 30%;
+.profile-card {
+    background: white;
+    border-radius: 18px;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.profile{
+.profile-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+.image-wrapper {
     display: flex;
-    flex-direction: row;
-    margin: 2rem;
+    justify-content: center;
+    margin-bottom: 18px;
 }
 
-.additional-info{
-    margin-left: 1.5rem;
+.profile-picture {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #f0f0f0;
+}
+
+.profile-details h2 {
+    margin: 5px 0 8px;
+    font-size: 20px;
+    color: #222;
+}
+
+.profile-details span {
+    display: block;
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.connect-btn {
+    border: none;
+    background: #222;
     color: white;
-    font-family:"Segoe UI Emoji", "Segoe UI Symbol";
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
 }
 
-.name{
-    font-size: 2rem;
+.connect-btn:hover {
+    background: #444;
 }
